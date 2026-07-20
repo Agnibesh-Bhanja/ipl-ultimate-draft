@@ -1,7 +1,7 @@
 import "./RecommendationPanel.css";
 import PlayerCard from "./PlayerCard";
 import { useEffect, useState } from "react";
-import CardBack from "./CardBack";
+import CardBack from "./Cardback";
 
 function RecommendationPanel({
 
