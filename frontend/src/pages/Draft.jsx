@@ -92,7 +92,7 @@ function Draft() {
 
                 {summary && (
 
-                    <ScoreBoard summary={summary} />
+                    <Scoreboard summary={summary} />
 
                 )}
 
