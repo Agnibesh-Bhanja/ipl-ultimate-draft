@@ -13,6 +13,7 @@ function Draft() {
     const [recommendations, setRecommendations] = useState([]);
     const [team, setTeam] = useState([]);
     const [summary, setSummary] = useState(null);
+    const [leaders, setLeaders] = useState([]);
 
     const [activeSlot, setActiveSlot] = useState(null);
 
@@ -23,6 +24,7 @@ function Draft() {
         loadRecommendations();
         loadSummary();
         loadTeam();
+        loadLeaderboard();
 
     }, []);
 
@@ -40,6 +42,10 @@ function Draft() {
 
     setTeam(res.data);
 
+}
+async function loadLeaderboard() {
+    const res = await api.get("/leaderboard");
+    setLeaders(res.data);
 }
     
 
@@ -120,7 +126,7 @@ function Draft() {
 
                 </div>
 
-                <Leaderboard />
+                <Leaderboard leaders={leaders}/>
 
                 <hr />
 
@@ -142,7 +148,7 @@ function Draft() {
 
                         onReset={resetDraft}
 
-                        onSubmitSuccess={() => {}}
+                        onSubmitSuccess={loadLeaderboard}
 
                     />
 
