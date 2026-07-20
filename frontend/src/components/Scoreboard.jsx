@@ -1,6 +1,6 @@
 import "./Scoreboard.css";
 
-function ScoreBoard({ summary }) {
+function Scoreboard({ summary }) {
 
     const ovrPercent = (summary.Overall / 99) * 100;
     const chemPercent = (summary.Chemistry / 33) * 100;
@@ -74,4 +74,4 @@ function ScoreCard({ title, value, percent }) {
 
 }
 
-export default ScoreBoard;
+export default Scoreboard;
