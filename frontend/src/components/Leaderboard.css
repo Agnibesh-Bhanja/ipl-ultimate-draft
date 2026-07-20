@@ -1,0 +1,121 @@
+.leaderboard{
+
+width:100%;
+
+max-width:450px;
+
+margin:60px auto;
+
+padding:25px;
+
+border-radius:26px;
+
+background:
+linear-gradient(
+145deg,
+#0d1118,
+#1b2333,
+#11161f
+);
+
+border:2px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 18px 45px rgba(0,0,0,.45),
+0 0 20px rgba(255,170,0,.08);
+
+}
+/* ---------- TITLE ---------- */
+
+.leaderboard h2{
+
+margin:0 0 22px;
+
+text-align:center;
+
+font-size:24px;
+
+font-family:Verdana,sans-serif;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+color:white;
+
+}
+
+/* ---------- ROW ---------- */
+
+.leader-row{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:14px 18px;
+
+margin-bottom:12px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,.05);
+
+transition:.25s;
+
+}
+
+.leader-row:hover{
+
+transform:scale(1.02);
+
+background:rgba(255,255,255,.10);
+
+}
+
+/* ---------- RANK ---------- */
+
+.leader-rank{
+
+font-size:18px;
+
+font-weight:900;
+
+color:#ff8c1a;
+
+width:45px;
+
+}
+
+/* ---------- NAME ---------- */
+
+.leader-name{
+
+flex:1;
+
+font-size:17px;
+
+font-weight:700;
+
+color:white;
+
+margin-left:10px;
+
+}
+
+/* ---------- SCORE ---------- */
+
+.leader-score{
+
+font-size:20px;
+
+font-weight:900;
+
+color:#FFD54A;
+
+text-shadow:
+0 0 10px rgba(255,215,0,.5);
+
+}

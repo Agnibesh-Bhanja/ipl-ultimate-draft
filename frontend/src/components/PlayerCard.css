@@ -1,0 +1,210 @@
+.draft-card{
+
+width:210px;
+height:300px;
+
+border-radius:26px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+cursor:pointer;
+
+transition:.3s;
+
+position:relative;
+
+overflow:hidden;
+
+border:3px solid rgba(255,255,255,.18);
+
+box-shadow:
+0 18px 40px rgba(0,0,0,.45);
+
+}
+
+/* ---------- SEASON ---------- */
+
+.draft-card.season{
+
+background:
+linear-gradient(
+160deg,
+#071d63,
+#1b4cd8,
+#3498ff
+);
+
+box-shadow:
+0 0 18px rgba(0,140,255,.55),
+0 18px 45px rgba(0,0,0,.45);
+
+}
+
+/* ---------- LEGENDARY ---------- */
+
+.draft-card.legendary{
+
+background:
+linear-gradient(
+160deg,
+#2d2d2d,
+#8b8b8b,
+#ececec
+);
+
+}
+
+/* ---------- EPIC ---------- */
+
+.draft-card.epic{
+
+background:
+linear-gradient(
+160deg,
+#2d005e,
+#6f29d8,
+#b17fff
+);
+
+}
+
+/* ---------- ICON ---------- */
+
+.draft-card.icon{
+
+background:
+linear-gradient(
+160deg,
+#050505,
+#3a3a3a,
+#7a7a7a
+);
+
+}
+
+/* ---------- Shine ---------- */
+
+.draft-card::before{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+height:300px;
+
+background:
+radial-gradient(circle,
+rgba(255,255,255,.28),
+transparent 70%);
+
+top:-170px;
+left:-90px;
+
+}
+
+/* ---------- Hover ---------- */
+
+.draft-card:hover{
+
+transform:
+translateY(-15px)
+scale(1.08);
+
+box-shadow:
+0 0 35px rgba(255,255,255,.35);
+
+}
+
+/* ---------- Rating ---------- */
+
+.draft-rating{
+
+margin-top:18px;
+
+font-size:74px;
+
+font-weight:900;
+
+color:#ff8c1a;
+
+font-family:Arial, sans-serif;
+
+line-height:1;
+
+text-shadow:
+-2px -2px 0 #111,
+2px -2px 0 #111,
+-2px 2px 0 #111,
+2px 2px 0 #111,
+0 0 18px #ff8c1a;
+
+}
+
+/* ---------- Role ---------- */
+
+.draft-role{
+
+margin-top:8px;
+
+font-size:18px;
+
+font-weight:800;
+
+color:white;
+
+}
+
+/* ---------- Name ---------- */
+
+.draft-name{
+
+margin-top:30px;
+
+padding:0 12px;
+
+font-size:24px;
+
+font-weight:900;
+
+text-align:center;
+
+color:white;
+
+}
+
+/* ---------- Team ---------- */
+
+.draft-team{
+
+margin-top:20px;
+
+font-size:22px;
+
+font-weight:700;
+
+color:#ededed;
+
+}
+
+/* ---------- Card Type ---------- */
+
+.draft-type{
+
+margin-top:auto;
+
+margin-bottom:18px;
+
+font-size:15px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+color:white;
+
+text-transform:uppercase;
+
+}

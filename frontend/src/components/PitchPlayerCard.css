@@ -1,0 +1,276 @@
+.pitch-card{
+
+width:150px;
+height:205px;
+
+border-radius:22px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+position:relative;
+
+overflow:hidden;
+
+transition:.35s;
+
+cursor:pointer;
+
+border:2px solid rgba(255,255,255,.25);
+
+box-shadow:
+0 18px 45px rgba(0,0,0,.45);
+
+color:white;
+
+}
+
+/* ---------- CARD BACKGROUNDS ---------- */
+
+.pitch-card.season{
+
+background:
+linear-gradient(
+160deg,
+#000a28,
+#112763 45%,
+#265788
+);
+
+border:2px solid rgba(255,255,255,.35);
+
+box-shadow:
+0 0 14px rgba(3, 40, 83, 0.65),
+0 0 30px rgba(0,140,255,.45),
+0 20px 45px rgba(0,0,0,.45);
+
+}
+
+.pitch-card.legacy{
+
+background:
+linear-gradient(
+160deg,
+#240232,
+#590b84,
+#694175
+);
+
+border:2px solid #e7e7e7;
+
+box-shadow:
+0 0 22px rgba(255,255,255,.45),
+0 20px 45px rgba(0,0,0,.45);
+
+}
+
+.pitch-card.epic{
+
+background:
+linear-gradient(
+160deg,
+#29005a,
+#6426c6,
+#a26dff
+);
+
+border:2px solid rgba(255,255,255,.25);
+
+box-shadow:
+0 0 30px #7d4dff,
+0 20px 45px rgba(0,0,0,.45);
+
+}
+
+.pitch-card.icon{
+
+background:
+linear-gradient(
+160deg,
+#050505,
+#303030,
+#707070
+);
+
+border:2px solid #cfcfcf;
+
+color:white;
+
+box-shadow:
+0 0 28px rgba(210,210,210,.5),
+0 20px 45px rgba(0,0,0,.5);
+
+}
+
+/* ---------- Shine ---------- */
+
+.pitch-card::before{
+
+content:"";
+
+position:absolute;
+
+width:240px;
+height:240px;
+
+background:
+radial-gradient(circle,
+rgba(255,255,255,.28),
+transparent 70%);
+
+top:-150px;
+left:-80px;
+
+transform:rotate(25deg);
+
+pointer-events:none;
+
+}
+
+/* ---------- Hover ---------- */
+
+.pitch-card:hover{
+
+transform:
+translateY(-8px)
+scale(1.05);
+
+}
+
+/* ---------- Rating ---------- */
+
+.pitch-rating{
+
+margin-top:8px;
+
+font-size:58px;
+
+font-weight:900;
+
+font-family:Arial, Helvetica, sans-serif;
+
+color:#ff8c1a;
+
+line-height:1;
+
+letter-spacing:-2px;
+
+}
+
+/* ---------- Role ---------- */
+
+.pitch-role{
+
+margin-top:4px;
+
+font-size:16px;
+
+font-weight:800;
+
+font-family:"Trebuchet MS", sans-serif;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+}
+
+/* ---------- Name ---------- */
+
+.pitch-name{
+
+margin-top:14px;
+
+padding:0 10px;
+
+text-align:center;
+
+font-size:20px;
+
+font-weight:900;
+
+font-family:"Trebuchet MS", Arial, sans-serif;
+
+line-height:1.15;
+
+color:white;
+
+text-shadow:
+1px 1px 3px rgba(0,0,0,.6);
+
+}
+
+/* ---------- Team ---------- */
+
+.pitch-team{
+
+margin-top:14px;
+
+font-size:15px;
+
+font-weight:700;
+
+font-family:Arial, sans-serif;
+
+opacity:.95;
+
+}
+
+/* ---------- Card Type ---------- */
+
+.pitch-type{
+
+margin-top:auto;
+
+margin-bottom:10px;
+
+font-size:12px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+font-family:Arial, sans-serif;
+
+text-transform:uppercase;
+
+opacity:.95;
+
+}
+
+.pitch-card.season .pitch-rating{
+
+text-shadow:
+-2px -2px 0 #111,
+2px -2px 0 #111,
+-2px 2px 0 #111,
+2px 2px 0 #111,
+0 0 18px #ff8c1a;
+
+}
+
+.pitch-card.legacy.pitch-rating{
+
+text-shadow:
+-2px -2px 0 black,
+2px -2px 0 black,
+-2px 2px 0 black,
+2px 2px 0 black,
+0 0 18px #ff8c1a;
+
+}
+
+
+.pitch-card.icon .pitch-rating{
+
+text-shadow:
+-2px -2px 0 black,
+2px -2px 0 black,
+-2px 2px 0 black,
+2px 2px 0 black,
+0 0 18px #ff8c1a;
+
+}
+
+

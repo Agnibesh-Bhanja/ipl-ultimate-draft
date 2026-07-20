@@ -1,0 +1,161 @@
+.pitch{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1100px;
+
+    height:900px;
+
+    margin:40px auto;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        180deg,
+        #289c43,
+        #15752f
+    );
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.45);
+
+}
+
+/* Grass stripes */
+
+.pitch::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.05) 0px,
+
+        rgba(255,255,255,.05) 2px,
+
+        transparent 2px,
+
+        transparent 58px
+
+    );
+
+    opacity:.4;
+
+}
+
+/* Every slot is positioned absolutely */
+
+.pitch-slot{
+
+    position:absolute;
+
+}
+
+/* ---------- BATSMAN ---------- */
+
+.slot-0{
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.slot-1{
+
+    top:50px;
+
+    left:10%;
+
+}
+
+.slot-2{
+
+    top:50px;
+
+    right:10%;
+
+}
+
+.slot-3{
+
+    top:280px;
+
+    left:30%;
+
+}
+
+.slot-4{
+
+    top:280px;
+
+    right:30%;
+
+}
+
+/* ---------- ALL ROUNDERS ---------- */
+
+.slot-5{
+
+    top:320px;
+
+    left:10%;
+
+}
+
+.slot-6{
+
+    top:320px;
+
+    right:10%;
+
+}
+
+/* ---------- BOWLERS ---------- */
+
+.slot-7{
+
+    bottom:80px;
+
+    left:10%;
+
+}
+
+.slot-8{
+
+    bottom:100px;
+
+    left:31%;
+
+}
+
+.slot-9{
+
+    bottom:100px;
+
+    right:31%;
+
+}
+
+.slot-10{
+
+    bottom:80px;
+
+    right:10%;
+
+}
