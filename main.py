@@ -110,3 +110,8 @@ def save_score(data:ScoreInput):
 def leaderboard():
 
     return top10()
+
+
+@app.get("/team")
+def get_team():
+    return draft.team().to_dict(orient="records")

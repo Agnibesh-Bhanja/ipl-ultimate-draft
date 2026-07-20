@@ -22,6 +22,7 @@ function Draft() {
 
         loadRecommendations();
         loadSummary();
+        loadTeam();
 
     }, []);
 
@@ -32,6 +33,15 @@ function Draft() {
         setRecommendations(res.data);
 
     }
+
+    async function loadTeam() {
+
+    const res = await api.get("/team");
+
+    setTeam(res.data);
+
+}
+    
 
     async function loadSummary() {
 
@@ -61,11 +71,11 @@ function Draft() {
 
         if (!res.data.success) {
 
-            alert("Draft Complete!");
+    await resetDraft();
 
-            return;
+    return;
 
-        }
+}
 
         setTeam(res.data.team || []);
         setRecommendations(res.data.recommendations || []);
@@ -132,7 +142,7 @@ function Draft() {
 
                         onReset={resetDraft}
 
-                        onSubmitSuccess={() => window.location.reload()}
+                        onSubmitSuccess={() => {}}
 
                     />
 

@@ -35,7 +35,9 @@ async function submitScore() {
     setSubmitted(true);
 
     // Refresh the leaderboard
+    if (onSubmitSuccess) {
     onSubmitSuccess();
+}
 
 }
 
