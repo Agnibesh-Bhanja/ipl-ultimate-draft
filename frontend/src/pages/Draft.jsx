@@ -155,6 +155,9 @@ async function loadLeaderboard() {
                 )}
 
             </div>
+            <footer className="footer">
+    Built by <strong>Agnibesh Bhanja</strong>
+</footer>
 
         </>
 
