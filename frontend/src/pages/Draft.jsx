@@ -3,7 +3,7 @@ import api from "../api/api";
 
 import CricketPitch from "../components/CricketPitch";
 import RecommendationPanel from "../components/RecommendationPanel";
-import ScoreBoard from "../components/ScoreBoard";
+import Scoreboard from "../components/Scoreboard";
 import DraftComplete from "../components/DraftComplete";
 import Leaderboard from "../components/Leaderboard";
 import InstructionsModal from "../components/InstructionsModal";
